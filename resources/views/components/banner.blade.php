@@ -1,4 +1,4 @@
-@props(['style' => session('flash.bannerStyle', 'success'), 'message' => session('flash.banner')])
+{{-- @props(['style' => session('flash.bannerStyle', 'success'), 'message' => session('flash.banner')])
 
 <div x-data="{{ json_encode(['show' => true, 'style' => $style, 'message' => $message]) }}"
     :class="{ 'bg-indigo-500': style == 'success', 'bg-red-700': style == 'danger', 'bg-yellow-500': style == 'warning', 'bg-gray-500': style != 'success' && style != 'danger' && style != 'warning'}"
@@ -45,4 +45,20 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
+
+
+<div class="relative bg-indigo-700">
+        <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+            <div class="pr-16 sm:text-center sm:px-16">
+                <p class="font-medium text-white">
+                    <span class="md:hidden">✨ We announced a new product! </span>
+                    <span class="hidden md:inline"> ✨ Big news! We're excited to announce a brand new product. </span>
+                    <span class="block sm:ml-2 sm:inline-block">
+                        <a href="#" class="text-white font-bold underline"> Learn more <span
+                                aria-hidden="true">&rarr;</span></a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
